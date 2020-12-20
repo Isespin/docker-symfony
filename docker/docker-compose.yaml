@@ -1,0 +1,33 @@
+version: '3.3'
+
+services:
+  app-db:
+    image: mysql:5.7
+    ports:
+      - "127.0.0.44:3306:3306"
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    container_name: app-db
+    environment:
+      MYSQL_ROOT_PASSWORD: app
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app
+
+  app-php-apache:
+    depends_on:
+      - app-db
+    build: .
+    links:
+      - app-db:app-db
+    ports:
+      - "127.0.0.44:80:80"
+    restart: always
+    container_name: app-php-apache
+    volumes:
+      - ../backend/:/var/www/html
+
+volumes:
+  db_data: {}
+  backend: {}

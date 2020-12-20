@@ -1,0 +1,24 @@
+/* LOGIN */
+.container {
+    text-align: center!important;
+    max-width: 500px!important;
+    max-height: 500px;
+}
+form.form.mt-5 {
+    max-width: 500px;
+    margin: auto;
+}
+.container.p-3.text-center.rounded {
+    border: 1px solid #000;
+    margin-top: 3em;
+    background-color: #f1f1f1;
+    border-radius:10px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+}
+.fa-unlock-alt{
+  font-size: 75px;
+  margin-top: 50px;
+  color:#007EAF;
+}

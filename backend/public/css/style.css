@@ -1,0 +1,54 @@
+
+div#user div {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    min-width: 500px;
+}
+.table {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+    box-shadow: 2px 2px 5px 0px rgba(156, 152, 152,1);
+}
+div#user div label {
+    width: 20%;
+    min-width: 250px;
+}
+div#user{
+    border:1px solid #ccc;
+    margin-bottom:1em;
+}
+div#user div{
+    padding:0.3em 0.3em 0.3em 1em;
+}
+div#user div:nth-child(odd) {
+    background-color: #fefefe;
+}
+div#user div:nth-child(even) {
+    background-color: #EFEFEF;
+}
+.table tr:nth-child(even) {
+    background-color: #EFEFEF;
+}
+.table tr:nth-child(odd) {
+    background-color: #fefefe;
+}
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: #EFEFEF;
+}
+.table-striped tbody tr:nth-of-type(even){
+  background-color: #fefefe;
+}
+h1 {
+    color: #007EAF;
+    text-shadow: 3px 3px #e5e5e5;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+button.btn {
+    float: left;
+}
+a.btn.btn-primary {
+    float: left;
+    margin:0 0.3em 0 0.3em;
+}

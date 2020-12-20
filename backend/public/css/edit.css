@@ -1,0 +1,7 @@
+div#user div:nth-child(2) {
+    color: red;
+    display: none;
+}
+div#user div:nth-child(1) {
+    background-color: #EFEFEF;
+}
